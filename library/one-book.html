@@ -6,10 +6,12 @@
     <meta name="author" content="profi web">
     <meta name="keywords" content="book, read">
     <meta name="description" content="site for reading">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/one-book.css">
 </head>
-<body>
+<body class="light-pink-background">
 <header>
-    <nav>
+    <nav class="container">
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li>Книги по жанрам
@@ -23,15 +25,15 @@
         </ul>
     </nav>
 </header>
-<main>
-    <article>
+<main class="container">
+    <article class="book">
         <div>
             <h3>Lorem ipsum.</h3>
             <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
         </div>
-        <div>
-            <span>Имя Фамилия автора</span>
-            <span>Жанр</span>
+        <div class="info">
+            <span class="info-author">Имя Фамилия автора</span>
+            <span class="info-genre">Жанр</span>
         </div>
 
         <p>
@@ -54,11 +56,11 @@
             atque, commodi dolorum est ex ipsa nesciunt officiis pariatur provident quas, reiciendis sed suscipit,
             veniam voluptate.
         </p>
-        <div>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+        <div class="pagination">
+            <span>1</span>
+            <span class="active">2</span>
+            <span>3</span>
+            <span>4</span>
         </div>
     </article>
 </main>

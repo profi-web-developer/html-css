@@ -1,0 +1,34 @@
+.pagination span{
+    display: inline-block;
+    width: 50px; /* ширина */
+    height: 50px; /* высота */
+    line-height: 50px;
+    /* рамка: толщина стиль цвет */
+    border: 3px solid #123C69;
+    /* скругление углов */
+    border-radius: 50%;
+    text-align: center;
+    color: #123C69;
+    margin: 1rem;
+}
+/* <span> <a class="active"></a></span> */
+/* .pagination span .active {} */
+/* <span class="active"></span> */
+.pagination span.active {
+    background-color: #BAB2B5;
+}
+
+.info {
+    display: flex;
+    font-weight: bold;
+}
+
+.author {}
+
+.info-genre {
+    margin-left: auto;
+}
+
+.book {
+    color: #123C69;
+}

@@ -1,0 +1,48 @@
+* {
+    /* стили применятся ко всем элементам */
+}
+
+body {
+    /* размер шрифта */
+    font-size: 32px;
+    margin: 0;
+}
+
+/* цвета */
+.light-pink-background {
+    background-color: #EEE2DC; /* rgb , rgba */
+}
+
+.light-pink-text {
+    color: #EEE2DC;
+}
+
+header {
+    background-color: #AC3B61;
+}
+
+header ul {
+    margin: 0;
+    /* оформление маркеров списка */
+    list-style-type: none;
+}
+
+footer {
+    background-color: #123C69;
+}
+
+footer a {
+    color: #BAB2B5;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /*width: ;*/
+    max-width: 1200px;
+    /* 0 - верх/низ auto - лево/право */
+    margin: 0 auto;
+}
