@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <style>
+        .elem {
+            border: 1px solid orangered;
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="flex-row">
+        <div class="col-3">
+            <div class="elem">
+                Элемент
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="elem">
+                Элемент
+            </div>
+        </div>
+    </div>
+    <div class="flex-row">
+        <div class="col-8 flex-column">
+            <div>
+                <div class="elem">
+                Элемент
+            </div>
+            </div>
+            <div>
+                <div class="elem">
+                Элемент
+            </div>
+            </div>
+            <div>
+                <div class="elem">
+                Элемент
+            </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="elem">
+                Элемент
+            </div>
+        </div>
+    </div>
+    <div class="flex-row">
+        <div class="col-6 flex-row wrap">
+            <div class="col-6">Содержимое ячейки</div>
+            <div class="col-6">Содержимое ячейки</div>
+            <div class="col-6">Содержимое ячейки</div>
+            <div class="col-6">Содержимое ячейки</div>
+            <div class="col-6">Содержимое ячейки</div>
+            <div class="col-6">Содержимое ячейки</div>
+        </div>
+        <div class="col-3">Содержимое ячейки</div>
+        <div class="col-3">Содержимое ячейки</div>
+    </div>
+</main>
+
+</body>
+</html>
