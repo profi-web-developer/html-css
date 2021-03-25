@@ -1,0 +1,152 @@
+body {
+    color: #3E2723;
+    font-size: 25px;
+}
+
+.flex-container-1 div,
+.flex-container-2 div,
+.flex-container-3 div,
+.flex-container-4 div,
+.flex-container-5 div{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+    border: 1px solid #3E2723;
+}
+/* Свойства flex контейнера */
+/*выравниевание по горизонтали*/
+.flex-container-1 {
+    display: flex;
+    background: lightgray;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.flex-container-2 div:nth-child(2) {
+    height: 200px;
+}
+
+/* выравнивание по вертикали */
+.flex-container-2 {
+    height: 300px;
+    background: lightgray;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+}
+
+/*направление главной оси*/
+.flex-container-3 {
+    display: flex;
+    background: lightgray;
+
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    flex-direction: column;
+    /*flex-direction: column-reverse;*/
+}
+
+.flex-container-4 {
+    width: 250px;
+    background: lightgray;
+
+    display: flex;
+    justify-content: space-around;
+
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+
+}
+
+/*многострочное выравнивание*/
+.flex-container-5 {
+    width: 250px;
+    background: lightgray;
+
+    display: flex;
+    justify-content: space-around;
+    height: 1000px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+}
+
+/* Свойства дочерних (flex) элементов*/
+/* order - элементы располагаются согласно значениям свойства order от меньшего к большему.
+   Элементы с одинаковым значением order  располагаются в том порядке, в каком они находятся в исходном коде
+*/
+.order-1{
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order--1 {
+    order: -1;
+}
+
+.sizes {
+    width: 400px;
+}
+/*flex-basis - начальный размер элемента. начальным размером элемента. Похоже на width и height, к которым добавляется содержимое элемента.
+flex-basis: auto | <размер>
+auto
+Указывает автоматический размер, основанный на содержимом элемента.
+<размер>
+ Задаёт размер элемента в px, mm, pt или в процентах вдоль главной оси. При этом размер вычисляется относительно родителя.
+Отрицательное значение недопустимо.*/
+.flex-basis{
+    flex-basis: auto;
+}
+
+/*flex-shrink - коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам,
+чтобы разместить все элементы в одну строку.
+Flex-элементы будут заполнять контейнер в зависимости от значения flex-shrink, когда стандартная ширина flex-элементов шире, чем flex-контейнер
+Значение по умолчанию - 1
+flex-shrink: <число> */
+.flex-shrink-2{
+    flex-shrink: 2;
+}
+.flex-shrink-3{
+    flex-shrink: 3;
+}
+
+/*flex-grow - определяет, сколько пространства может занимать флекс внутри контейнера.
+В качестве значения принимаются числа, они задают пропорции каждого флекса
+flex-grow: <число>*/
+.flex-grow-2{
+    flex-grow: 2;
+}
+.flex-grow-5{
+    flex-grow: 5;
+}
+
+/*flex - сокращённое свойство.  Элементы могут быть растянуты пропорционально с учётом заданного соотношения или сжаты,
+чтобы целиком вместить все элементы без переносов в одну строку. Объединение flex-basis, flex-shrink и flex-grow
+flex: flex-grow flex-shrink flex-basis
+Значение по умолчанию:
+flex-grow: 0
+flex-shrink: 1
+flex-basis: auto
+*/
+
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
