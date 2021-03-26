@@ -1,0 +1,72 @@
+body {
+    font-size: 20px;
+    margin: 0;
+    background-color: rgba(121, 189, 143, 1);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+
+.title {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.specifications,
+.reviews {
+    padding-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviews span {
+    display: block;
+}
+
+.reviews div {
+    padding: 0.7rem;
+}
+
+.reviews div:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.reviews div:nth-child(even) {
+    background-color: lightslategray;
+}
+
+.reviews h3,
+.specifications h3 {
+    text-transform: uppercase;
+}
+
+#slider {
+    box-shadow: inset 0 4px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    background: url("../img/flowers.jpg");
+}
+
+header,
+footer {
+    background: #FF4E00;
+}
+
+main {
+    background-color: rgba(190, 235, 159, 1);
+}
+
+#right-aside,
+#left-aside {
+    background-color: rgba(121, 189, 143, 1);
+}
+
+/* grid layout*/

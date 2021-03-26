@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.bubbles {
+    height: 100vh;
+    font-size: 50px;
+}
+
+.bubbles span {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    line-height: 300px;
+    box-shadow: inset 0 4px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.bubbles span:nth-child(1) {
+    background-color: rgba(255, 97, 56, 1);
+}
+
+.bubbles span:nth-child(2) {
+    background-color: rgba(255, 255, 157, 1);
+}
+
+.bubbles span:nth-child(3) {
+    background-color: rgba(190, 235, 159, 1);
+}
+
+.bubbles span:nth-child(4) {
+    background-color: rgba(121, 189, 143, 1);
+}
+
+.bubbles span:nth-child(5) {
+    background-color: rgba(255, 255, 157, 1);
+}
+
+.bubbles span:nth-child(6) {
+    background-color: rgba(255, 97, 56, 1);
+}
+
+.bubbles span:nth-child(7) {
+    background-color: rgba(255, 255, 157, 1);
+}
+
+.form-section {
+    height: 100vh;
+    font-size: 30px;
+}
+
+.form-section div {
+    margin-top: 20px;
+}
+
+#gallery {
+    height: 100vh;
+}
+
+
+/* bubbles */
+
+
+/* form-section */
+
+
+/* gallery */
