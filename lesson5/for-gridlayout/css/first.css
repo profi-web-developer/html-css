@@ -70,3 +70,74 @@ main {
 }
 
 /* grid layout*/
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header" /* первый ряд */
+        "left main right" /* второй ряд */
+        "slider slider slider" /* третий ряд */
+        "footer footer footer"; /* четвертый ряд */
+
+    grid-template-columns: 1fr minmax(500px, 1200px) 1fr;
+    grid-template-rows: 80px auto 40vh 100px;
+}
+
+header {
+    grid-area: header;
+}
+
+#left-aside {
+    grid-area: left;
+}
+
+#right-aside {
+    grid-area: right;
+}
+
+main {
+    grid-area: main;
+}
+
+#slider {
+    grid-area: slider;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    display: grid;
+    grid-template:
+        "image text" /* можно задать высоту первого ряда */
+        "specifications reviews" /* можно задать высоту второго ряда */
+        ". reviews" /* можно задать высоту третьего ряда */
+        ". reviews" /* можно задать высоту четвертого ряда */
+        "similar similar" 200px
+        / 1fr 2fr;
+}
+
+.title {
+    grid-area: text;
+}
+
+.image {
+    grid-area: image;
+}
+
+.specifications {
+    grid-area: specifications;
+}
+
+.reviews {
+    grid-area: reviews;
+}
+
+.similar {
+    grid-area: similar;
+    display: flex;
+}
+
+
+
+
