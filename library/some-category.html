@@ -8,6 +8,7 @@
     <meta name="description" content="site for reading">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/some-category.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
 </head>
 <body class="light-pink-background">
 <header>
@@ -30,12 +31,14 @@
         <h2>Название жанра</h2>
         <article class="book">
             <h3>Lorem ipsum.</h3>
-            <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
-            </p>
+            <div class="flex-row">
+                <img class="col-5" src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
+                <p class="col-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
+                    laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                    Ipsam, perferendis!
+                </p>
+            </div>
             <a href="one-book.html">Читать</a>
         </article>
         <article class="book">

@@ -52,6 +52,88 @@ img {
     height: auto;   /* height: 100% */
 }
 
-* {
-    background: url("../img/1569163751_i-13.jpg");
+
+.text-shadow-red,
+.text-shadow-blue {
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
 }
+
+.text-shadow-blue {
+    background-color: #123C69;
+}
+
+.text-shadow-red {
+    background-color: #AC3B61;
+}
+
+header {
+    display: flex;
+    align-items: start;
+    line-height: 100px;
+}
+
+form {
+    margin-right: 3rem;
+    margin-left: auto;
+}
+
+.menu > li {
+    display: inline-block;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+}
+
+.submenu {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu > ul {
+    /* скрытие элементов */
+    /* opacity: 0; */
+    /* display: none; */
+    /* height: 0; overflow: hidden; */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    background-color: #AC3B61;
+    z-index: 1;
+}
+
+.submenu:hover ul {
+    height: 300px;
+    transition: height 1s;
+    /*background-color: #AC3B61;*/
+}
+
+
+form > span {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    color: #123C69;
+}
+
+header input[type="text"] {
+    border-style: none;
+    outline-style: none;
+
+    color: #123C69;
+    font-size: 1.5rem;
+    background-color: #EEE2DC;
+    /* если рамка только снизу, border-radius: 0; */
+    border-radius: 5px;
+    padding: 0.7rem 0.7rem 0.7rem 2.5rem;
+}
+

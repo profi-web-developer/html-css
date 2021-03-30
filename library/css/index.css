@@ -20,8 +20,56 @@
     text-align: center;
 }
 
+.book a {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: #123C69;
+    color: #EEE2DC;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .book p {
     padding: 1rem;
 }
 
+.book a {
+
+}
+
+.random {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+}
+
+.random h2 {
+    grid-column: 1 / 5;
+}
+
+.random div {
+    position: relative;
+}
+
+.random a {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 40%;
+    background-color: #AC3B61;
+    color: #EEE2DC;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    opacity: 0;
+    /* transition: opacity 1s; */
+    /* background-color: rgba(34, 56, 67, .6); */
+}
+
+.random div:hover a {
+    opacity: 1;
+    transition: opacity 1s;
+}
