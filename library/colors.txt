@@ -3,3 +3,10 @@
 персиковый #EDC7B7
 серый #BAB2B5
 светло-розовый #EEE2DC
+
+иконки
+https://fontawesome.com/
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+https://fonts.google.com/icons
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
