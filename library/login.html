@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма входа</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -22,13 +24,26 @@
 </header>
 
 <main>
-    <p>Введите email и пароль для входа или <a href="#">зарегистрируйтесь</a>, если еще нет аккаунта</p>
-    <form action="#" method="post">
-        <input type="email" name="email" placeholder="Введите e-mail">
-        <input type="password" name="password" placeholder="Введите пароль">
-        <label>Запомнить: <input type="checkbox" name="remember" value="remember" checked></label>
-        <input type="submit" value="Войти">
-    </form>
+    <div>
+        <form action="#" method="post" class="authorization">
+            <div class="input-wrapper">
+                <input type="email" name="email" placeholder="Введите e-mail">
+                <span class="fa fa-envelope email"></span>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" name="password" placeholder="Введите пароль">
+                <span class="fa fa-key password"></span>
+            </div>
+            <div>
+                <label>
+                    Запомнить:
+                    <input type="checkbox" name="remember" value="remember" checked>
+                </label>
+            </div>
+            <input type="submit" value="Войти">
+
+        </form>
+    </div>
 </main>
 
 

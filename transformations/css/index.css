@@ -31,11 +31,11 @@ img {
     opacity: 0.5;
 
     /* свойство перехода */
-    transition-property: opacity;
+    transition-property: opacity; /* all */
     /* скорость перехода */
     transition-duration: 2s; /* 40ms */
     /* переход с задержкой */
-    transition-delay: 1s; /* 1000 ms */
+    transition-delay: 1s; /* 1000ms */
     transition-timing-function: ease;
     /*
     transition: transition-property transition-duration
