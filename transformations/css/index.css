@@ -1,0 +1,147 @@
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    font-size: 32px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.transition,
+.rotate {
+    position: relative;
+}
+
+.transition div,
+.rotate div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background: yellowgreen;
+    color: #444444;
+}
+
+.transition {
+    height: 40vh;
+    margin-bottom: 20px;
+
+    opacity: 0.5;
+
+    /* свойство перехода */
+    transition-property: opacity;
+    /* скорость перехода */
+    transition-duration: 2s; /* 40ms */
+    /* переход с задержкой */
+    transition-delay: 1s; /* 1000 ms */
+    transition-timing-function: ease;
+    /*
+    transition: transition-property transition-duration
+    transition-timing-function transition-delay;
+    */
+    transition: opacity 2s ease;
+}
+
+.transition:hover {
+    opacity: 1;
+}
+
+.transition-2 {
+    color: #FF4E00;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    transition-property: color, background-color; /* all */
+    transition-duration: 3s;
+}
+
+.transition-2:hover {
+    background-color: #FF4E00;
+
+    color: white;
+}
+
+/* трансформации - transform
+ 1. transform: translate сдвиг по оси
+ 2. transform: scale масштабирование
+ 3. transform: rotate поворот
+ 4. transform: skew искажение оси
+ */
+.translate {
+    background: #5E35B1;
+    color: plum;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    transition: transform 2s;
+}
+
+.translate:hover {
+    transform: translate(20px, 30px); /* сдвиг по x и y */
+    transform: translateX(20px); /* сдвиг по x */
+    transform: translateY(30px); /*сдвиг по y */
+}
+
+
+.scale{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background: plum;
+    color: #5E35B1;
+}
+
+.scale:hover {
+    /*масштабирование*/
+    /*значения от 0 до 1 уменьшают элемент*/
+    transform: scale(.4, .7); /* уменьшение по X И по Y */
+    transform: scaleX(.4); /* уменьшение по X */
+    transform: scaleY(.7); /* уменьшение по Y */
+    transform: scaleX(1.5); /* увеличение по X */
+    transition: transform 2s;
+}
+
+.rotate {
+    /*height: 200px;*/
+    /*width: 200px;*/
+    /*background: green;*/
+    /*-25deg - поворот против часовой стрелки*/
+    transform: rotate(10deg);
+}
+
+.skew {
+    background: #5E35B1;
+    color: plum;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.skew:hover {
+    /*transform: skew(8deg, 7deg);*/
+    /*transform: skewY(20deg);*/
+    transform: skewX(20deg);
+    transition: transform 2s;
+    /*смещает ось трансформации по x и y*/
+    transform-origin: 20px 10px;
+}
+
+/* Применение масштабирования */
+.scale-img {
+    height: 50vh;
+    overflow: hidden; /* 1. скрываем то, что выходит за границы контейнера */
+}
+
+.scale-img img:hover {
+    transform: scale(1.2); /* 2. увеличиваем масштаб при наведении */
+    transition: transform 2s ease; /* 3. увеличиваем время перехода */
+}

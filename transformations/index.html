@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Переходы</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="container">
+
+<div class="transition">
+    <img src="https://picsum.photos/200/300?random=9">
+    <div>
+        Изменение времени перехода из одного состояния в другое при наведении (transition)
+        <pre>
+.transition {
+    transition: opacity 2s ease;
+}
+</pre>
+    </div>
+</div>
+
+<div class="transition-2">
+    Lorem ipsum dolor sit amet.
+</div>
+
+
+<div class="translate">
+    Сдвиг при наведении (transform: translate)
+<pre>
+    .translate:hover {
+        transform: translateY(30px); /*сдвиг по y */
+    }
+</pre>
+
+</div>
+
+<div class="scale">
+    Масштабирование при наведении (transform: scale)
+<pre>
+    .scale:hover {
+        transform: scaleX(1.5); /* увеличение по X */
+    }
+</pre>
+</div>
+
+<div class="rotate">
+    <img src="https://picsum.photos/300/200">
+    <div>
+        Поворот (transform: rotate)
+<pre>
+    .rotate {
+        transform: rotate(10deg);
+    }
+
+</pre>
+    </div>
+</div>
+
+<div class="skew">
+    Смещение оси (transform: skew)
+<pre>
+.skew:hover {
+    transform: skewX(20deg);
+    transform-origin: 20px 10px;  /*смещает ось трансформации по x и y*/
+}
+</pre>
+</div>
+
+<section>
+    <h2>Применение масштабирования</h2>
+    <div class="scale-img">
+        <img src="https://picsum.photos/400/400?random=2">
+    </div>
+</section>
+
+</body>
+</html>
