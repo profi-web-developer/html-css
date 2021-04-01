@@ -1,0 +1,29 @@
+иконки
+https://fontawesome.com/
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+https://fonts.google.com/icons
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+CSS генераторы, в тч clip-path, https://cssportal.com/css-clip-path-generator/
+https://www.cssportal.com/css-generators.php
+
+CSS3 фильтры - свойство filter
+https://cssgenerator.org/filter-css-generator.html
+
+индикаторы загрузки
+https://icons8.com/cssload/ru/spinners
+
+градиенты
+https://cssgradient.io/
+https://gradients.app/ru/new
+https://projects.verou.me/css3patterns/
+
+текстуры
+https://www.transparenttextures.com/
+
+transform
+https://makingcss.com/gradient
+
+скролбар
+https://w3generator.com/scrollbar
