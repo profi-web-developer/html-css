@@ -1,0 +1,42 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #5D4037;
+    font-size: 25px;
+}
+
+.first-letter::first-letter{
+    color: red;
+}
+
+.first-line::first-line {
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.color::selection {
+    color: yellow;
+}
+.background-color::selection {
+    background-color: orangered;
+}
+
+.text-shadow::selection {
+    text-shadow: 5px 5px 10px black;
+}
+
+.before::before {
+    content: "♥";
+    color: red;
+    margin-right: 5px;
+}
+
+.after::after {
+    content: "\2B50";
+    margin-left: 5px;
+}
+
+#title:target {
+    background-color: #BCAAA4;
+    padding: 20px 30px;
+}

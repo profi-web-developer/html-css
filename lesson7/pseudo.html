@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Псевдоклассы и псевдоэлементы</title>
+    <link rel="stylesheet" href="pseudo.css">
+</head>
+<body>
+<section>
+    <h3>Псевдоэлементы</h3>
+    <p>
+        <strong>Псевдоэлементы</strong>
+        - это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного
+        элемента
+    </p>
+    <h4>Синтаксис:</h4>
+    <pre>
+селектор::псевдо-элемент {
+    свойство: значение;
+}
+    </pre>
+    <div>
+        <h4 class="first-letter">Первая буква элемента</h4>
+        <pre>
+.first-letter::first-letter { /* первая буква элемента '.first-letter' */
+    color: red;
+}
+        </pre>
+    </div>
+
+    <div>
+        <h4 class="first-line">Первая строка элемента</h4>
+        <pre>
+.first-line::first-line { /* первая строка элемента '.first-line' */
+    color: orangered;
+    text-transform: uppercase;
+}
+        </pre>
+    </div>
+
+    <div>
+        <h4>Selection - позволяет применить стили к части документа, который был выделен пользователем (например, с помощью мыши)</h4>
+        <ul>
+            <li class="color background-color">
+                color, background-color
+                <pre>
+.selection .color::selection {
+    color: yellow;
+}
+.selection .background-color::selection {
+    background-color: orangered;
+}
+                </pre>
+            </li>
+            <li class="text-shadow">
+                text-shadow
+                <pre>
+.text-shadow::selection {
+    text-shadow: 5px 5px 10px black;
+}
+                </pre>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Before / After</h4>
+        <p class="before"><strong>before</strong> - псевдоэлемент, который является первым потомком выбранного элемента (по умолчанию строчный)</p>
+        <pre>
+.before::before {
+    content: "♥";
+    color: red;
+    margin-right: 5px;
+}
+        </pre>
+        <p class="after"><strong>after</strong> - псевдоэлемент, который является последним потомком выбранного элемента (по умолчанию строчный)</p>
+        <pre>
+.after::after {
+    content: "\2B50";
+    margin-left: 5px;
+}
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h3 id="title">Псевдоклассы</h3>
+    <p>
+        <strong>Псевдокласс CSS</strong>
+        - это ключевое слово, добавленное к селектору, которое определяет его особое состояние, например, нажатая ссылка
+    </p>
+    <h4>Синтаксис:</h4>
+    <pre>
+селектор:псевдо-класс {
+    свойство: значение;
+}
+    </pre>
+    <div>
+        <h4>Для ссылок:</h4>
+        <ul>
+            <li><strong>селектор:visited {стили}</strong> - ссылка, по которой был осуществлен переход</li>
+            <li><strong>селектор:link {стили}</strong> - ссылка, которая ещё не была посещена</li>
+        </ul>
+
+        <h4>Для ссылок и других элементов:</h4>
+        <ul>
+            <li><strong>селектор:active {стили}</strong> - элемент, активировани нажатием мыши, tab и пр</li>
+            <li><strong>селектор:hover {стили}</strong> - срабатывает, когда пользователь наводит на элемент мышью!</li>
+        </ul>
+
+        <h4>Для элементов формы:</h4>
+        <ul>
+            <li><strong>селектор:focus {стили}</strong> - применяется, когда элемент (такой как input формы) получает фокус</li>
+            <li><strong>селектор:checked {стили}</strong> - input с типами radio и checkbox, option, которые выбраны</li>
+            <li><strong>селектор:default {стили}</strong> - элемент формы, установленный по умолчанию для группы связаных элементов (radio или checkbox)</li>
+            <li><strong>селектор:disabled {стили}</strong> - элемент, с установленным атрибутом disabled</li>
+            <li><strong>селектор:enabled {стили}</strong> - элемент, без атрибута disabled</li>
+            <li><strong>селектор:optional {стили}</strong> - элементы, для которых не был установлен атрибут required</li>
+            <li><strong>селектор:required {стили}</strong> - элементы, для которых был установлен атрибут required</li>
+            <li><strong>селектор:valid {стили}</strong> - поля, которые прошли html валидацию</li>
+            <li><strong>селектор:invalid {стили}</strong> - поля, которые не прошли html валидацию</li>
+            <li><strong>селектор:in-range {стили}</strong> - элементы, значение которых соответствует указанному для них диапазону ограничений</li>
+            <li><strong>селектор:out-of-range {стили}</strong> - элементы, значение которых не соответствует указанному для них диапазону ограничений</li>
+        </ul>
+
+        <h4>Дочерние элементы:</h4>
+        <ul>
+            <li><strong>селектор :first-child</strong> - первый дочерний элемент</li>
+            <li><strong>селектор :last-child</strong> - последний дочерний элемент</li>
+            <li><strong>селектор :nth-child(число)</strong> - например, :nth-child(2) - дочерний элемент под номером 2</li>
+            <li><strong>селектор :nth-child(odd)</strong> - все нечетные дочерние элементы</li>
+            <li><strong>селектор :nth-child(even)</strong> - все четные дочерние элементы</li>
+        </ul>
+
+        <h4>Стилизация элементов, к которым был осуществлен переход по гиперссылке:</h4>
+        <p><strong>селектор:target</strong> - позволяет связать гиперссылку 'a' с любым элементом на странице</p>
+        <a href="#title">Перейти в заголовку</a>
+    </div>
+</section>
+
+</body>
+</html>
