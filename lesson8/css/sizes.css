@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-UltralightItalic.eot');
+    src: local('SF Pro Display UltralightItalic'), local('SFProDisplay-UltralightItalic'),
+    url('../fonts/SFProDisplay-UltralightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-UltralightItalic.woff') format('woff'),
+    url('../fonts/SFProDisplay-UltralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+.add-margin-padding {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #FF4E00;
+}
+.add-colors {
+    background:  #FF4E00;
+    color: white;
+}
+
+
+.vh-vw {
+    height: 70vh;
+    width: 80vw;
+}
+
+.px {
+    font-size: 20px;
+}
+.px div {
+    font-size: 25px;
+    width: 500px;
+    height: 600px;
+}
+
+.em-rem {
+    font-size: 2em;
+}
+
+.em-rem p:first-child {
+    font-size: 2em;
+}
+
+.em-rem p:last-child {
+    /* если font-size html = 16px, 2rem = 32px */
+    /* если font-size html = 20px, 2rem = 40px */
+    /* если font-size html = 10px, 2rem = 20px */
+    /* и тд */
+    font-size: 2rem;
+    height: 4rem;
+    padding: 0.2rem;
+}
+
+.percent {
+    max-width: 1200px;
+    font-size: 30px;
+}
+
+.percent p:first-child {
+    width: 50%;
+}
+.percent p:last-child {
+    font-size: 50%;
+    line-height: 600%;
+}
+
+
+@media screen and (max-width: 900px){
+    html {
+        font-size: 40px;
+    }
+
+    .vh-vw,
+    .em-rem {
+        overflow: hidden;
+    }
+
+
+    .em-rem {
+        font-size: 0.5em;
+    }
+}
+
+
