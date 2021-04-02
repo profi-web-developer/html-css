@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Размеры</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sizes.css">
+</head>
+<body>
+
+<div class="vh-vw add-margin-padding">
+    Размеры vh и vw
+    <div class="add-margin-padding add-colors">
+        1vh - эквивалентно 1% высоты окна браузера <br>
+        1vw	- эквивалентно 1% ширины окна браузера
+        (вместо 100vw лучше использовать 100%)
+    </div>
+</div>
+
+<div class="px add-margin-padding">
+    Размер в px
+    <div class="add-margin-padding add-colors">
+        1px – пиксель на экране
+    </div>
+</div>
+
+<div class="em-rem add-margin-padding">
+    Размеры в em и rem
+    <div class="add-margin-padding add-colors">
+        <p>
+            1em – текущий размер шрифта. <br>
+            Размеры em – относительные, они определяются по текущему контексту (размеру шрифта)
+        </p>
+        <p>
+            1rem – текущий размер шрифта html.<br>
+            Размеры rem – относительные, они определяются по размеру шрифта html
+        </p>
+    </div>
+</div>
+
+<div class="percent add-margin-padding">
+    Размеры в %
+    <div class="add-margin-padding add-colors"> <!-- font-size: 40px -->
+        <p>
+            Размеры элементов, padding, margin - % от размера родителя
+        </p>
+        <p> <!-- font-size: 22px -->
+            Размер шрифта, line-height - % от текущего размера шрифта
+        </p>
+    </div>
+</div>
+
+<section> <!-- font-size: 20px -->
+    <article> <!-- font-size: 2em -> 40px -->
+        <div>
+            <div> <!-- font-size: 2em -> 80px -->
+                <p>Hello</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section> <!-- font-size: 20px -->
+    <article> <!-- font-size: 2rem -->
+        <div>
+            <div> <!-- font-size: 2rem -->
+                <p>Hello</p> <!-- размер Hello - 32px -->
+            </div>
+        </div>
+    </article>
+</section>
+</body>
+</html>
