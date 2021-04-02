@@ -14,23 +14,25 @@
 </head>
 <body class="light-pink-background">
 <header>
-    <ul class="menu">
-        <li><a href="index.html">Главная</a></li>
-        <li class="submenu">Книги по жанрам
-            <ul>
-                <li><a href="some-category.html">Жанр 1</a></li>
-                <li><a href="some-category.html">Жанр 2</a></li>
-                <li><a href="some-category.html">Жанр 3</a></li>
-            </ul>
-        </li>
-        <li><a href="login.html">Войти</a></li>
-    </ul>
-    <form>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li class="submenu">Книги по жанрам
+                <ul>
+                    <li><a href="some-category.html">Жанр 1</a></li>
+                    <li><a href="some-category.html">Жанр 2</a></li>
+                    <li><a href="some-category.html">Жанр 3</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Войти</a></li>
+        </ul>
+        <form class="search">
         <span> <!-- <div> -->
             <span class="fa fa-search icon"></span>
             <input type="text" placeholder="по автору или названию">
         </span> <!-- </div> -->
-    </form>
+        </form>
+    </div>
 </header>
 
 <main class="container">
@@ -64,13 +66,17 @@
             <img src="https://picsum.photos/200/300?random=7">
             <a href="one-book.html">Читать</a>
         </div>
+        <div>
+            <img src="https://picsum.photos/200/300?random=8">
+            <a href="one-book.html">Читать</a>
+        </div>
     </section>
     <section class="flex-row wrap">
-        <h2 class="section-h2">Книги из жанра 1</h2>
+        <h2 class="section-h2 text-shadow-blue">Книги из жанра 1</h2>
         <div class="col-4 flex-row">
             <article class="book">
                 <h3>Lorem ipsum.</h3>
-                <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
+                <div><img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit
                     inventore
@@ -86,7 +92,7 @@
         <div class="col-4  flex-row">
             <article class="book">
                 <h3>Lorem ipsum.</h3>
-                <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
+                <div><img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit
                     inventore
@@ -100,7 +106,7 @@
         <div class="col-4 flex-row">
             <article class="book">
                 <h3>Lorem ipsum.</h3>
-                <img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст" height="300" width="150">
+                <div><img src="img/eebd2dc209f1ea85902e74c0eeaa3444.jpg" alt="альтернативный текст"></div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit
                     inventore
@@ -112,54 +118,56 @@
             </article>
         </div>
     </section>
-    <section>
-        <h2>Книги из жанра 2</h2>
-        <article>
-            <h3>Lorem ipsum.</h3>
-            <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
-            </p>
-            <a href="one-book.html">Читать</a>
-        </article>
-        <article>
-            <h3>Lorem ipsum.</h3>
-            <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
-            </p>
-            <a href="one-book.html">Читать</a>
-        </article>
-        <article>
-            <h3>Lorem ipsum.</h3>
-            <img src="img/1569163751_i-13.jpg" alt="альтернативный текст" height="300" width="150">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
-                laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
-                Ipsam, perferendis!
-            </p>
-            <a href="one-book.html">Читать</a>
-        </article>
+    <section class="flex-row wrap">
+        <h2 class="section-h2 text-shadow-blue">Книги из жанра 2</h2>
+        <div class="col-4 flex-row">
+            <article class="book">
+                <h3>Lorem ipsum.</h3>
+                <div><img src="img/1569163751_i-13.jpg" alt="альтернативный текст"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
+                    laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                    Ipsam, perferendis!
+                </p>
+                <a href="one-book.html">Читать</a>
+            </article>
+        </div>
+        <div class="col-4 flex-row">
+            <article class="book">
+                <h3>Lorem ipsum.</h3>
+                <div><img src="img/1569163751_i-13.jpg" alt="альтернативный текст"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
+                    laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                    Ipsam, perferendis!
+                </p>
+                <a href="one-book.html">Читать</a>
+            </article>
+        </div>
+        <div class="col-4 flex-row">
+            <article class="book">
+                <h3>Lorem ipsum.</h3>
+                <div><img src="img/1569163751_i-13.jpg" alt="альтернативный текст"></div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquam consequatur ea fugit inventore
+                    laudantium natus, necessitatibus non nulla optio quae quod quos repudiandae rerum, tempore, voluptate.
+                    Ipsam, perferendis!
+                </p>
+                <a href="one-book.html">Читать</a>
+            </article>
+        </div>
     </section>
 </main>
 
 <footer>
-    <div>
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-    </div>
-    <div>
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-    </div>
-    <div>
-        <a href="#">VK</a>
-        <a href="#">FB</a>
-        <a href="#">Instagram</a>
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <div class="social">
+        <a class="fb" href="#"></a>
+        <a class="insta" href="#"></a>
+        <a class="yt" href="#"></a>
     </div>
 </footer>
 

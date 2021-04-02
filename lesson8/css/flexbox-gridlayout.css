@@ -1,0 +1,110 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    color: #3E2723;
+    margin: 0;
+    display: grid;
+    grid-template:
+        "header header header"
+        "left main main"
+        "footer footer footer" 100px
+        /minmax(15%, 20%) 1fr 1fr;
+}
+
+header {grid-area: header;}
+aside {grid-area: left; }
+main {grid-area: main; }
+footer {grid-area: footer; }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #3E2723;
+    text-transform: uppercase;
+}
+
+header {
+    background: #FF4E00;
+    display: flex;
+}
+
+header .navbar {
+    display: flex; /* .navbar - флекс контейнер */
+    line-height: 80px; /* минимальная высота строки текста */
+    justify-content: space-between; /* выравниевание по горизонтали: a и nav */
+}
+
+header nav a {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 4px solid transparent;
+}
+header nav a:hover,
+header nav a:focus {
+    border-bottom-color: #FBE9E7;
+}
+
+header .logo {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+header form {
+    margin-left: auto;
+    line-height: 80px;
+    margin-right: 2rem;
+}
+
+header input {
+    border-style: none;
+    outline-style: none;
+    font-size: 1.2rem;
+    color: #3E2723;
+}
+
+
+aside {
+    background: #FBE9E7;
+}
+
+aside nav {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+aside nav a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+aside nav a:hover {
+    background: #FF4E00;
+}
+
+aside p {
+    text-transform: uppercase;
+    display: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #FF4E00;
+}
+
+.card {
+    background: #FF4E00;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}

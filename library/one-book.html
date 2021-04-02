@@ -8,13 +8,14 @@
     <meta name="description" content="site for reading">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/one-book.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body class="light-pink-background">
 <header>
-    <nav class="container">
-        <ul>
+    <div class="container">
+        <ul class="menu">
             <li><a href="index.html">Главная</a></li>
-            <li>Книги по жанрам
+            <li class="submenu">Книги по жанрам
                 <ul>
                     <li><a href="some-category.html">Жанр 1</a></li>
                     <li><a href="some-category.html">Жанр 2</a></li>
@@ -23,7 +24,13 @@
             </li>
             <li><a href="login.html">Войти</a></li>
         </ul>
-    </nav>
+        <form class="search">
+        <span> <!-- <div> -->
+            <span class="fa fa-search icon"></span>
+            <input type="text" placeholder="по автору или названию">
+        </span> <!-- </div> -->
+        </form>
+    </div>
 </header>
 <main class="container">
     <article class="book">
@@ -65,18 +72,14 @@
     </article>
 </main>
 <footer>
-    <div>
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-    </div>
-    <div>
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-    </div>
-    <div>
-        <a href="#">VK</a>
-        <a href="#">FB</a>
-        <a href="#">Instagram</a>
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <div class="social">
+        <a class="fb" href="#"></a>
+        <a class="insta" href="#"></a>
+        <a class="yt" href="#"></a>
     </div>
 </footer>
 </body>

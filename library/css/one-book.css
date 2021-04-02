@@ -1,3 +1,16 @@
+.book {
+    color: #123C69;
+}
+
+.info {
+    display: flex;
+    font-weight: bold;
+}
+
+.info-genre {
+    margin-left: auto;
+}
+
 .pagination span{
     display: inline-block;
     width: 50px; /* ширина */
@@ -18,18 +31,5 @@
     background-color: #BAB2B5;
 }
 
-.info {
-    display: flex;
-    font-weight: bold;
-}
 
-.author {}
-
-.info-genre {
-    margin-left: auto;
-}
-
-.book {
-    color: #123C69;
-}
 

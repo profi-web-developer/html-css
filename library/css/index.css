@@ -1,45 +1,3 @@
-.section-h2{
-    flex: 1 0 100%;
-}
-
-.book {
-    margin: 1rem;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
-
-    position: relative;
-}
-
-.book h3 {
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    right: 1rem;
-    background: #EEE2DC;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-
-.book a {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-    background-color: #123C69;
-    color: #EEE2DC;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.book p {
-    padding: 1rem;
-}
-
-.book a {
-
-}
-
 .random {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -73,3 +31,52 @@
     opacity: 1;
     transition: opacity 1s;
 }
+
+.section-h2 {
+    flex: 1 0 100%;
+}
+
+.book {
+    margin: 1rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.book h3 {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+    background: #EEE2DC;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.book a {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: #123C69;
+    color: #EEE2DC;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.book p {
+    padding: 1rem;
+}
+
+.book div {
+    overflow: hidden;
+}
+
+.book img:hover {
+    transform: scale(1.2);
+    transition: transform 2s;
+}
+
+
