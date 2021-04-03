@@ -25,8 +25,10 @@ not (min-width: 544px)
 2. min-width - задаёт минимальную ширину области
 3. max-width - задает максимальную область
 4. 5. 6. height, min-height и max-height - аналогично, но в отношении высоты
-7. orientation - функция, которая проверяет то, в каком режиме (portrait или landscape) отображается страница
-8. aspect-ratio (min-aspect-ratio, max-aspect-ratio) - позволяют указать то, как ширина устройства должна относиться к высоте
+7. orientation - функция, которая проверяет то,
+в каком режиме (portrait или landscape) отображается страница
+8. aspect-ratio (min-aspect-ratio, max-aspect-ratio) -
+позволяют указать то, как ширина устройства должна относиться к высоте
  */
 
 /*

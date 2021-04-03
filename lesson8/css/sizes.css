@@ -88,4 +88,13 @@ body {
     }
 }
 
+/*
+body: font-size - 20px;
+#first: width - 2em; font-size - 40px;
+#second: width - 2em; 
 
+<body>
+ <div id="first">
+      <div id="second"></div>
+ </div>
+</body>*/
